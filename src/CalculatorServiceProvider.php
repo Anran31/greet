@@ -21,7 +21,7 @@ class CalculatorServiceProvider extends ServiceProvider
         // called after all services are registered.
         if ($this->app->runningInConsole()) {
             $this->publishes([
-                __DIR__ . '/../config/config.php' => config_path('calc_config.php')
+                __DIR__ . '/config/config.php' => config_path('calc_config.php')
             ], 'config');
         }
     }
