@@ -18,10 +18,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Anran31\\Greeting\\CalculatorServiceProvider"
+                "Anran31\\Greet\\CalculatorServiceProvider"
             ],
             "aliases": {
-                "Calculator": "Anran31\\Greeting\\Facades\\Calculator"
+                "Calculator": "Anran31\\Greet\\Facades\\Calculator"
             }
         }
     }
