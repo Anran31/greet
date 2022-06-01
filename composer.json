@@ -14,5 +14,15 @@
             "email": "andika.nugrahanto2002@gmail.com"
         }
     ],
-    "require": {}
+    "require": {},
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Anran31\\Greeting\\CalculatorServiceProvider"
+            ],
+            "aliases": {
+                "Calculator": "Anran31\\Greeting\\Facades\\Calculator"
+            }
+        }
+    }
 }
