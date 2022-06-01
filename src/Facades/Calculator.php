@@ -1,6 +1,6 @@
 <?php
 
-namespace Anran31\Greeting\Facades;
+namespace Anran31\Greet\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

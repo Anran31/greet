@@ -1,6 +1,6 @@
 <?php
 
-namespace Anran31\Greeting;
+namespace Anran31\Greet;
 
 class Calculator
 {
