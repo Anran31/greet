@@ -12,10 +12,17 @@ class CalculatorServiceProvider extends ServiceProvider
         $this->app->bind('calculator', function ($app) {
             return new Calculator();
         });
+
+        $this->mergeConfigFrom(__DIR__ . '/../config/config.php', 'calc_config');
     }
 
     public function boot()
     {
         // called after all services are registered.
+        if ($this->app->runningInConsole()) {
+            $this->publishes([
+                __DIR__ . '/../config/config.php' => config_path('calc_config.php')
+            ], 'config');
+        }
     }
 }
