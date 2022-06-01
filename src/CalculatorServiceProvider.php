@@ -13,7 +13,7 @@ class CalculatorServiceProvider extends ServiceProvider
             return new Calculator();
         });
 
-        $this->mergeConfigFrom(__DIR__ . '/../config/config.php', 'calc_config');
+        $this->mergeConfigFrom(__DIR__ . '/config/config.php', 'calc_config');
     }
 
     public function boot()
